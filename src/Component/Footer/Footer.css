@@ -144,32 +144,35 @@
     color: #02735E;
   }
   
-  .input-group {
+  .input-container {
     display: flex;
-    border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
+    align-items: center;
   }
   
-  .input-group input {
+  .input-container input {
     flex: 1;
     padding: 10px;
-    border: none;
+    border: 1px solid #fff;
     outline: none;
     height: 100%;
-    margin: 0;
-    border-radius: 0;
+    margin: 0px;
+    border-radius: 0px !important;
+  
+    
   }
   
-  .input-group button {
+  .input-container button {
     background: #02735E;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
+    border-radius: 0;
   }
   
-  .input-group button:hover {
+  .input-container button:hover {
     background: #025848;
   }
   

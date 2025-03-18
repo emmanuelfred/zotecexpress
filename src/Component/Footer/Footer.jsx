@@ -146,9 +146,9 @@ function Footer() {
                 <div className="footer-contact">
                     <h6>Newsletter</h6>
                     <form className="subscribe_form">
-                    <div className="input-group">
+                    <div className="input-container">
                         <input type="text" className="form-control" placeholder="Enter your email" />
-                        <button className="btn btn-second btn-submit" type="button">
+                        <button className="" type="button">
                         <FaPaperPlane />
                         </button>
                     </div>
