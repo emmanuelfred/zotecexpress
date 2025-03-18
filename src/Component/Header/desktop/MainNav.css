@@ -1,0 +1,81 @@
+.MainNav{
+    background-color: #ffffff;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 4%;
+    height: 70px;
+    gap: 5%;
+  }
+  .MainNav .brand_logo{
+    width: 90px;
+  }
+  .MainNav .brand{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+  }
+  .MainNav .brand div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  .MainNav .brand select{
+    background-color: transparent;
+    border: none;
+   
+    color: #014925;
+  }
+  .right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+  }
+.MainNav-search-container{
+  background-color: #0066332f;
+  border: 0;
+  border-radius: 25px;
+  padding: 0.2em 10px;
+  color: #5a5959;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 3px;
+  max-width: 500px;
+ 
+}
+.MainNav-search-container input{
+  background-color: transparent;
+  border: 0;
+
+ 
+  border-radius: 0;
+  height: 30px;
+
+}
+.MainNav .activities-container{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+}
+.MainNav ul a{
+  color: #5a5959;
+}
+.MainNav .nav{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.MainNav .nav a{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}

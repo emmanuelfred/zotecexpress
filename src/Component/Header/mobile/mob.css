@@ -1,0 +1,31 @@
+.MobileNav{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px ;
+}
+.MobileNav.scrolled{
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 100px;
+    background-color: #fffffff1;
+    border: 3px solid #fff;
+}
+.brand_logo{
+    width: 70px;
+}
+.activities-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.MobileNav{
+    display: none;
+}
+@media (max-width:1000px) {
+    .MobileNav{
+        display: flex;
+    }
+}

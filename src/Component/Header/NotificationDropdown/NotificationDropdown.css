@@ -1,0 +1,14 @@
+.notification-container a,.cart-container a{
+    position: relative;
+  }
+  .notification-container span{
+    width: 10px;
+    height: 10px;
+    border-radius: 11px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: -2px;
+   
+  }
+  

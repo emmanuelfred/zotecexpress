@@ -1,0 +1,138 @@
+
+/* Most ordered food section */
+.most-ordered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+/* Food item card */
+.item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+    transform: scale(1.03);
+}
+
+/* Image styling */
+.item-img {
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Item info */
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+    width: 100%;
+    padding-top: 0px;
+
+}
+
+.item-info h2 {
+    font-size: 0.8em;
+    color: #222;
+    margin: 5px 0;
+}
+
+.item-info p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.item-info button {
+    background: red;
+    color: #fff;
+    width: 100%;
+    padding: 8px 15px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.item-info button:hover {
+    background: #025c49;
+}
+
+.item-details-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #012d1a6e;
+}
+.item-details {
+    
+    
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    width: 90%;
+    max-width: 900px;
+  }
+  
+  .item-detail-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    background: #014925;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #012d1a;
+  }
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resturantlist-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .most-ordered {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 100%;
+    }
+}

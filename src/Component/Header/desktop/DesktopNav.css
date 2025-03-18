@@ -1,0 +1,22 @@
+.DesktopNav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .scrol-nav-wrapper,
+  .main-nav-wrapper {
+    position: absolute;
+    width: 100%;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  
+.DesktopNav{
+    display: block;
+}
+@media (max-width:1000px) {
+    .DesktopNav{
+        display: none;
+    }
+}

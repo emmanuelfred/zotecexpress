@@ -1,0 +1,69 @@
+/* Cookie Bar Styling */
+.cookie-bar-section {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 600px;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.cookie-bar-section img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.cookie-bar-section .content {
+    flex: 1;
+}
+
+.cookie-bar-section h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.cookie-bar-section p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.cookie-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.cookie-buttons .btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-solid-default {
+    background: #02735E;
+    color: white;
+}
+
+.btn-solid-default:hover {
+    background: #ff3b3b;
+}
+
+.default-light1 {
+    background: white;
+    color: #333;
+}
+
+.default-light1:hover {
+    background: #ddd;
+}

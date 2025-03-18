@@ -1,0 +1,94 @@
+/* Flash Sale Container */
+.flash-sale-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background: linear-gradient(#00130a88,#00130a6b),url(../Assets/banner/banner-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Flash Sale Banner */
+.flash-sale-banner {
+    width: 90%;
+    max-width: 800px;
+    background: linear-gradient(135deg, #ff7b00, #ff3b3b);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+.flash-sale-banner h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.discount-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.discount-text span {
+    color: #02735E;
+}
+
+.deal-text {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.deal-text span {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Timer */
+.flash-sale-timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.timer-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 80px;
+}
+
+.timer-box h2 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.timer-box p {
+    font-size: 14px;
+    margin: 5px 0 0;
+}
+
+/* Shop Now Button */
+.shop-now-btn {
+    margin-top: 20px;
+    background: white;
+    color: #ff3b3b;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shop-now-btn:hover {
+    background: #ffe600;
+    color: #ff3b3b;
+}

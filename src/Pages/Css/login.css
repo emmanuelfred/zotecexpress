@@ -1,0 +1,20 @@
+@import url(../../dashboard/css/soft-ui-dashboard.css);
+.Login,.Signup{
+    width: 100%;
+    height: 106.9vh;
+    background: url(../../Component/Assets/hero_image/download.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Signup{
+    height: fit-content;
+}
+.oblique-image{
+   background:url(../../Component/Assets/site-image/1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: right;
+}
+.page-banner{
+    background: url(../../Component/Assets/banner/banner-6.jpg);
+}

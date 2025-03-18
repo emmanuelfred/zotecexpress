@@ -1,0 +1,44 @@
+
+.user-container svg{
+  
+    font-size: 40px;
+  }
+  .user-container .col-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #4b6658;
+    cursor: pointer;
+  }
+  
+  .user-container span{
+    font-size: 0.9em;
+  }
+  .user-container .col-6:hover{
+    color: #006633;
+    
+  }
+  .user a{
+    display: flex;
+    gap: 10px;
+ 
+    border: 1px solid #5a5959;
+    border-radius: 25px;
+    padding: 5px 10px;
+  }
+  .btn-contianer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .username{
+    display: block;
+  }
+  @media (max-width:600px) {
+    .username{
+      display: none;
+    }
+    
+  }

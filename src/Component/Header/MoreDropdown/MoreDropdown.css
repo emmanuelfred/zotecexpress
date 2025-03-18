@@ -1,0 +1,94 @@
+.MoreDropdown {
+    
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .MoreDropdown-box {
+    position: absolute;
+    top: 70px;
+    left: 5%;
+    width: 90%;
+    
+    background: white;
+    padding: 15px;
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(20px);
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+  }
+  
+  .MoreDropdown-box.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  
+  /* Your Original more_box Style */
+  .more_box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    background: #f5f5f5;
+    border-radius: 8px;
+    min-width: 350px;
+  }
+  
+  .more_box img {
+    width: 100%;
+    height: 120px;
+   
+    object-fit: cover;
+  }
+  
+  .more_box span {
+    display: block;
+    margin: 8px 0;
+    font-weight: bold;
+  }
+  
+  .more_box .btn {
+    
+    background:linear-gradient(to left top, #006633e1, #013f20f6);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s;
+    border: 0;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .more_box .btn:hover {
+    background:linear-gradient(to left top, #013f20f6, #006633e1);
+  }
+  
+  .MoreDropdown  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .MoreDropdown  .swiper-wrapper {
+    transition-timing-function: linear !important; /* Smooth infinite loop */
+  }
+  .MoreDropdown  .more_swiper .swiper-slide {
+    width: 350px !important;  /* Each slide is exactly 300px */
+    margin-right: 20px !important; /* Keeps the space between slides */
+    
+  }
+  
+  @media (max-width:1000px) {
+    .MoreDropdown-box {
+        top: 80px;
+        background-color: #fffffff1;
+    }
+  }

@@ -1,0 +1,82 @@
+.e_store .header{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    
+}
+.e_store ul{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.e_store ul li{
+    padding: 8px 15px;
+    border: 3px solid #02735E;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.e_store ul li:hover{
+    background: #02735E;
+    transform: scale(1.2);
+}
+.e_store ul li:hover a{
+    color: #fff;
+}
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider-wrapper {
+    width: 100%; /* Adjust based on design */
+    overflow: hidden;
+  }
+  
+  .slider-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slider-item {
+    min-width: 120px; /* Adjust width */
+    padding: 10px;
+    text-align: center;
+    background: #f0f0f0;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  
+  .prev-btn, .next-btn {
+    background: #014925; /* Your theme color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .prev-btn:disabled, .next-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .e_store .aside{
+    background:  linear-gradient(#00130a77,#00130a6b),url(../Assets/site-image/1.jpg);
+    background-position: right;
+  }
+.Product-wrapper{
+    justify-content: center;
+  }
+  .product-contanter{
+    margin-top: 20px;
+  }
+  

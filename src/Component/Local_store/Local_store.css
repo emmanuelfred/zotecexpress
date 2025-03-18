@@ -1,0 +1,74 @@
+.Local_store .header{
+    background:  linear-gradient(#00130a49,#00130a49),url(../Assets/banner/vbanner-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin-bottom: 20px;
+
+}
+.Local_store .header h3{
+    color: #fff;
+}
+.Local_store .header span{
+    color:  #07ac5f;
+}
+.aside{
+    
+    background:  linear-gradient(#00130a77,#00130a6b),url(../Assets/banner/Banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    padding: 15px;
+}
+.product-contanter{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+.aside .category-btn{
+    background: #ddd;
+    padding: 10px;
+    color: #00130a;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 6px;
+}
+.Product-wrapper{
+    width: 70%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+@media (max-width:900px) {
+  .product-contanter{
+    flex-direction: column;
+    
+    
+    gap: 20px;
+  }
+  .aside{
+    width: 100%;
+    height: 220px;
+  }
+  .Product-wrapper{
+    width: 100%;
+    justify-content: center;
+  }
+    
+}
+@media (max-width:500px){
+    .Product-wrapper{
+      gap: 10px;
+      }
+  }

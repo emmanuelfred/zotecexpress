@@ -1,0 +1,38 @@
+.notification-container .dropdown-menu,.cart-container .dropdown-menu{
+    border: 0;
+    padding: 10px;
+    padding-top: 20px;
+    width: 300px;
+    background-color: #ffffffbe;
+  }
+  .cart-container span{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 10px;
+    background-color: red;
+    color: #fff;
+    border-radius: 11px;
+  }
+  .checkout{
+    background-color: #038644ad;
+    border-radius: 10px;
+    
+  }
+  .checkout:hover{
+    background-color: #038644b9;
+  }
+  .checkout a{
+    color: #fff;
+  }
+  .checkout a:hover{
+    color: #f6fcf9b9;
+  }
+  .delete_icon{
+    color: #038644ad;
+  }

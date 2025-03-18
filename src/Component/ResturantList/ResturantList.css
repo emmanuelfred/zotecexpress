@@ -1,0 +1,141 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.resturantlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.resturantlist-header h1 {
+  font-size: 24px;
+}
+
+.resturantlist-header a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Restaurants Section */
+.resturants-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Restaurant Location Icon */
+.resturant-location-icon {
+  width: 80px;
+  height: 80px;
+  background: rgb(255, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.resturant-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Slider Container */
+.resturant-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Restaurant Items (Slider) */
+.resturants {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 15px;
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+.resturants::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+.resturant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 140px;
+  text-align: center;
+}
+
+.resturant img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.resturant a {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  transform: translateY(-50%);
+  background: rgb(255, 255, 255);
+  color: rgb(255, 3, 3);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn.left {
+  left: 0px;
+}
+
+.nav-btn.right {
+  right: 0px;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 253, 253, 0.9);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resturants-container {
+    flex-direction: column;
+  }
+
+  
+}
