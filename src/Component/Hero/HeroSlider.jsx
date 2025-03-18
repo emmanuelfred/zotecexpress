@@ -25,7 +25,7 @@ const HeroSlider = () => {
             <div className="slide_info" style={{order:slide.text_position}}>
               <div className="slide_text">
                 <h2>{slide.text}</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe vitae commodi adipisci ipsa quod suscipit.</p>
+                <p> dolor sit amet consectetur adipisicing elit. Saepe vitae commodi adipisci ipsa quod suscipit.</p>
                 <Link to="/shop">Explore more</Link>
               </div>
             </div>
