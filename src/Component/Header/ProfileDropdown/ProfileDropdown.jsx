@@ -13,12 +13,12 @@ import {
 } from "react-icons/fi";
 import "./ProfileDropdown.css";
 import profilePicture from '../../Assets/p1_product_i1.png'
-import LoginButton from "../Loginbutton/LoginButton";
+
 
 function ProfileDropdown() {
   // Simulated user data (Replace with actual user state from backend)
   const [user, setUser] = useState({
-    isLoggedIn: true, // Change to false to simulate a logged-out state
+    isLoggedIn: false, // Change to false to simulate a logged-out state
     name: "Kate",
     profilePic: profilePicture, // Replace with real image URL
   });
@@ -97,7 +97,7 @@ function ProfileDropdown() {
           </div>
         ) : (
           <div className="btn-contianer ">
-            <LoginButton/>
+            <Link to={'/login'} >login</Link>
           </div>
         )}
       </div>

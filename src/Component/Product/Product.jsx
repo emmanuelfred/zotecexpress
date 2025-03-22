@@ -44,10 +44,12 @@ function Product(props) {
         
        
 
-        <p><button><FaShoppingCart size={24}/></button> 
+        <p className='p' >
+          <button><FaShoppingCart size={24}/></button> 
 
      
-        {props.rating}⭐</p>
+        <span>{props.rating}⭐</span>
+        </p>
       </div>
     </div>
   );
