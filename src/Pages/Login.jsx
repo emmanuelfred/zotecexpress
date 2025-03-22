@@ -71,7 +71,7 @@ function Login() {
                     <p className="mb-4 text-sm mx-auto">
                       Don't have an account?{" "}
                       <Link
-                        to="/sign_up"
+                        to="/signup"
                         className="text-info text-gradient font-weight-bold"
                       >
                         Sign up

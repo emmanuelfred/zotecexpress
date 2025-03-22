@@ -20,7 +20,7 @@
     color: #006633;
     
   }
-  .user a{
+  .user .drop_tap{
     display: flex;
     gap: 10px;
  

@@ -12,13 +12,11 @@ import {
   FiHelpCircle
 } from "react-icons/fi";
 import "./ProfileDropdown.css";
-import profilePicture from '../../Assets/p1_product_i1.png'
-
+import profilePicture from '../../Assets/p1_product_i1.png';
 
 function ProfileDropdown() {
-  // Simulated user data (Replace with actual user state from backend)
   const [user, setUser] = useState({
-    isLoggedIn: false, // Change to false to simulate a logged-out state
+    isLoggedIn: false, // Change to true to simulate logged-in state
     name: "Kate",
     profilePic: profilePicture, // Replace with real image URL
   });
@@ -26,11 +24,11 @@ function ProfileDropdown() {
   return (
     <div className="dropdown user">
       <Link
-        className="d-flex align-items-center dropdown-toggle"
+        className="d-flex align-items-center drop_tap"
         data-bs-toggle="dropdown"
         aria-expanded="false"
+        style={{ cursor: "pointer" }}
       >
-        {/* Show User Icon when NOT Logged In, Else Show Profile Pic */}
         {user.isLoggedIn ? (
           <img
             src={user.profilePic}
@@ -41,21 +39,20 @@ function ProfileDropdown() {
               height: "35px",
               borderRadius: "50%",
               objectFit: "cover",
-          
             }}
           />
         ) : (
           <FaRegUser size={26} />
         )}
 
-        {/* Greeting with User Name when Logged In */}
         <span className="username">
           {user.isLoggedIn ? `Hi, ${user.name}` : ""}
-         
         </span>
+
+        {/* Custom dropdown icon (replacing Bootstrap's default) */}
+        <FaChevronDown size={14} className="ms-2" />
       </Link>
 
-      {/* Dropdown Menu */}
       <div
         className="dropdown-menu dropdown-menu-end p-2 shadow"
         style={{ width: "300px" }}
@@ -96,8 +93,19 @@ function ProfileDropdown() {
             </div>
           </div>
         ) : (
-          <div className="btn-contianer ">
-            <Link to={'/login'} >login</Link>
+          <div className="btn-container">
+            <Link to={"/login"} className="btn bg-gradient-info w-100 mt-2 mb-0">
+              Login
+            </Link>
+             <p className="mt-2 text-sm mx-auto">
+                                  Don't have an account?{" "}
+                                  <Link
+                                    to="/signup"
+                                    className="text-info text-gradient font-weight-bold"
+                                  >
+                                    Sign up
+                                  </Link>
+                                </p>
           </div>
         )}
       </div>
