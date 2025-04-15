@@ -33,7 +33,7 @@ function Signup() {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/users", {
+      const response = await axios.post("https://zotech.onrender.com/api/users", {
         name: formData.name,
         email: formData.email,
         password: formData.password,
